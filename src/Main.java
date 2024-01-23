@@ -83,8 +83,8 @@ public class Main {
         var employeesAmount = workHoursTotal / workHoursPerEmployee;
         System.out.println("Всего работников в компании — " + employeesAmount + " человек." );
 
-        var altEmployeesAmount = 94;
-        var altWorkHoursTotal = altEmployeesAmount * 8;
+        var altEmployeesAmount = employeesAmount + 94;
+        var altWorkHoursTotal = altEmployeesAmount * workHoursPerEmployee;
         System.out.println("Если в компании работает " + altEmployeesAmount + " человек, то всего " + altWorkHoursTotal + " часов работы может быть поделено между сотрудниками." );
     }
 }
